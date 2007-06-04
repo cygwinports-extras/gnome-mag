@@ -6,30 +6,32 @@ services for use by other client applications and assistive
 technologies.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  ORBit2-2.14.0-1
-  at-spi-1.6.6-1
-  gtk2-x11-2.8.17-1
-  libX11_6-1.0.0-2
-  libXdamage1-1.0.2.2-1
-  libXfixes3-3.0.1.2-1
-  libbonobo2-2.14.0-1
-  libpopt0-1.6.4-4
+  cygwin-1.5.24-2
+  ORBit2-2.14.7-1
+  at-spi-1.18.1-1
+  gdk-pixbuf2-2.10.12-1
+  glib2-2.12.12-1
+  gtk2-x11-2.10.12-1
+  libX11_6-1.1.1-1
+  libXdamage1-1.0.4-1
+  libXfixes3-4.0.3-1
+  libbonobo2-2.16.0-1
+  libintl8-0.15-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
-  autoconf1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.93-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  intltool-0.35.0-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  pkg-config-0.20-1
-  sed-4.1.4-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  autoconf1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  intltool-0.35.5-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical homepage:
   http://developer.gnome.org/projects/gap/
@@ -40,21 +42,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-mag-0.12.5-X-src.tar.bz2
+  unpack gnome-mag-0.14.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-mag-0.12.5-X.cygport all
+  cygport ./gnome-mag-0.14.4-X.cygport all
 
 This will create:
-  /usr/src/gnome-mag-0.12.5-X-src.tar.bz2
-  /usr/src/gnome-mag-0.12.5-X.tar.bz2
-  /usr/src/gnome-mag-doc-0.12.5-X.tar.bz2
+  /usr/src/gnome-mag-0.14.4-X-src.tar.bz2
+  /usr/src/gnome-mag-0.14.4-X.tar.bz2
+  /usr/src/gnome-mag-doc-0.14.4-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(gnome-mag)
   /usr/bin/cyggnome-mag-2.dll
   /usr/bin/magnifier.exe
   /usr/include/gnome-mag-1.0/magnifier/GNOME_Magnifier.h
@@ -64,13 +67,13 @@ Files included in the binary package:
   /usr/lib/orbit-2.0/GNOME_Magnifier_module.dll
   /usr/lib/orbit-2.0/GNOME_Magnifier_module.la
   /usr/lib/pkgconfig/gnome-mag-1.0.pc
-  /usr/share/doc/Cygwin/gnome-mag-0.12.5.README
-  /usr/share/doc/gnome-mag-0.12.5/AUTHORS
-  /usr/share/doc/gnome-mag-0.12.5/COPYING
-  /usr/share/doc/gnome-mag-0.12.5/ChangeLog
-  /usr/share/doc/gnome-mag-0.12.5/INSTALL
-  /usr/share/doc/gnome-mag-0.12.5/NEWS
-  /usr/share/doc/gnome-mag-0.12.5/README
+  /usr/share/doc/Cygwin/gnome-mag-0.14.4.README
+  /usr/share/doc/gnome-mag-0.14.4/AUTHORS
+  /usr/share/doc/gnome-mag-0.14.4/COPYING
+  /usr/share/doc/gnome-mag-0.14.4/ChangeLog
+  /usr/share/doc/gnome-mag-0.14.4/INSTALL
+  /usr/share/doc/gnome-mag-0.14.4/NEWS
+  /usr/share/doc/gnome-mag-0.14.4/README
   /usr/share/gnome-mag/1_32/appstart.xpm
   /usr/share/gnome-mag/1_32/bottom_left_corner.xpm
   /usr/share/gnome-mag/1_32/bottom_side.xpm
@@ -94,10 +97,13 @@ Files included in the binary package:
   /usr/share/idl/gnome-mag-1.0/GNOME_Magnifier.idl
   /usr/share/locale/ang/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/as/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/az/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/bn/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/br/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/bs/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ca/LC_MESSAGES/gnome-mag.mo
@@ -109,6 +115,7 @@ Files included in the binary package:
   /usr/share/locale/el/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/en_CA/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/eo/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/es/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/et/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/eu/LC_MESSAGES/gnome-mag.mo
@@ -127,13 +134,18 @@ Files included in the binary package:
   /usr/share/locale/it/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ja/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ka/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/kn/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ko/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ku/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ky/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/lt/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/lv/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/mg/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/mi/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/mk/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/ml/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/mn/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/mr/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ms/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/nb/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ne/LC_MESSAGES/gnome-mag.mo
@@ -147,6 +159,7 @@ Files included in the binary package:
   /usr/share/locale/ro/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/ru/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/rw/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/si/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/sk/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/sl/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/sq/LC_MESSAGES/gnome-mag.mo
@@ -161,174 +174,221 @@ Files included in the binary package:
   /usr/share/locale/uk/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/vi/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gnome-mag.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/gnome-mag.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gnome-mag.mo
+  /usr/share/man/man1/magnifier.1.gz
 
-Files included in the doc package:
-
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-common_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-common_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-imodule_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-imodule_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-skels_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-skels_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-stubs_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier-stubs_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier_8h-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier_8h.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier_8idl-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/GNOME__Magnifier_8idl.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/annotated.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/classGNOME_1_1Magnifier_1_1Magnifier.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/classGNOME_1_1Magnifier_1_1ZoomRegion.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/damage-client_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/damage-client_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/damage-client_8h-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/damage-client_8h.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/dir_000000.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/dir_000001.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/dirs.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/doxygen.css
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/doxygen.png
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/files.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x61.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x62.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x63.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x64.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x65.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x66.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x67.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x68.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x69.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x6c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x6d.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x6e.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x70.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x71.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x72.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x73.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x74.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x75.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x76.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x77.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x78.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x79.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_0x7a.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_enum.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_eval.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_func.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/functions_vars.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x61.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x62.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x63.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x64.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x65.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x66.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x67.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x69.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x6c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x6d.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x6e.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x6f.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x70.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x72.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x73.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x74.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x75.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_0x7a.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x62.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x63.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x64.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x65.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x67.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x69.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x6d.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x6f.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x70.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x74.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_defs_0x7a.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_enum.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_eval.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x62.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x63.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x67.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x69.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x6d.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x70.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x72.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x74.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_func_0x7a.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/globals_vars.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/index.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier-main_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier-main_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier-private_8h-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier-private_8h.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier_8h-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/magnifier_8h.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/namespaceGNOME.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/namespaceGNOME_1_1Magnifier.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/namespacemembers.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/namespacemembers_type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/namespaces.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structBonobo__EventSource__UnknownListener__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structBonobo__Pair__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structBonobo__PropertyBag__BackendFailed__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structBonobo__PropertyBag__InvalidType__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structBonobo__PropertyBag__NotFound__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structBonobo__PropertyBag__ReadOnly__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structCORBA__sequence__Bonobo__Pair.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structCORBA__sequence__CORBA__Object.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structCORBA__sequence__CORBA__string.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structGNOME_1_1Magnifier_1_1Point.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structGNOME_1_1Magnifier_1_1RectBounds.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structGNOME__Magnifier__Point__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structGNOME__Magnifier__RectBounds__type.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structMagLoginHelper.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structMagLoginHelperClass.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structMagnifier.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structMagnifierClass.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structMagnifierOptions.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structMagnifierZoomRegionSaveProps.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__ConfigDatabase.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__ConfigDatabase____epv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__ConfigDatabase____vepv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__EventSource.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__EventSource____epv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__EventSource____vepv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__Listener.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__Listener____epv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__Listener____vepv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__PropertyBag.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__PropertyBag____epv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__Bonobo__PropertyBag____vepv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__GNOME__Magnifier__Magnifier.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__GNOME__Magnifier__Magnifier____epv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__GNOME__Magnifier__Magnifier____vepv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__GNOME__Magnifier__ZoomRegion.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__GNOME__Magnifier__ZoomRegion____epv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structPOA__GNOME__Magnifier__ZoomRegion____vepv.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structZoomRegion.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structZoomRegionClass.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/struct__MagnifierPrivate.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/struct__ZoomRegionPrivate.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/structtiming.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/zoom-region-private_8h-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/zoom-region-private_8h.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/zoom-region_8c-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/zoom-region_8c.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/zoom-region_8h-source.html
-  /usr/share/doc/gnome-mag-0.12.5/reference/html/zoom-region_8h.html
+(gnome-mag-doc)
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-common_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-common_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-imodule_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-imodule_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-skels_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-skels_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-stubs_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier-stubs_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier_8h-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier_8h.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier_8idl-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/GNOME__Magnifier_8idl.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/annotated.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/dir_13ad882efed71f625fc815d9016b8292.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/dir_fb436069bdb66ac1a75ca6bf141af2e2.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/dirs.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/doxygen.css
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/doxygen.png
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/files.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x61.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x62.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x63.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x64.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x65.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x66.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x67.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x68.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x69.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x6c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x6d.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x6e.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x6f.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x70.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x71.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x72.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x73.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x74.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x75.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x76.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x77.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x78.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x79.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_0x7a.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_enum.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_eval.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_func.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x61.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x62.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x63.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x64.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x65.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x66.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x67.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x68.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x69.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x6c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x6d.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x6e.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x6f.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x70.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x71.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x72.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x73.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x74.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x75.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x76.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x77.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x78.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x79.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/functions_vars_0x7a.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x61.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x62.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x63.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x64.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x65.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x66.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x67.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x69.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x6c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x6d.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x6e.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x6f.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x70.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x72.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x73.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x74.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x75.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_0x7a.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x62.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x63.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x64.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x65.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x67.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x69.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x6d.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x6f.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x70.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x74.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_defs_0x7a.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_enum.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_eval.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x62.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x63.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x67.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x69.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x6d.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x70.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x72.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x74.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_func_0x7a.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x61.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x62.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x63.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x64.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x66.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x67.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x6c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x6d.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x6e.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x6f.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x70.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x72.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x73.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x74.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x75.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/globals_vars_0x7a.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/gmag-events_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/gmag-events_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/gmag-events_8h-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/gmag-events_8h.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/index.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/interfaceGNOME_1_1Magnifier_1_1Magnifier.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/interfaceGNOME_1_1Magnifier_1_1ZoomRegion.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier-main_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier-main_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier-private_8h-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier-private_8h.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier_8h-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/magnifier_8h.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/namespaceGNOME.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/namespaceGNOME_1_1Magnifier.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/namespacemembers.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/namespacemembers_type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/namespaces.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structBonobo__EventSource__UnknownListener__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structBonobo__Pair__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structBonobo__PropertyBag__BackendFailed__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structBonobo__PropertyBag__InvalidType__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structBonobo__PropertyBag__NotFound__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structBonobo__PropertyBag__ReadOnly__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structCORBA__sequence__Bonobo__Pair.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structCORBA__sequence__CORBA__Object.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structCORBA__sequence__CORBA__string.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structGNOME_1_1Magnifier_1_1Point.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structGNOME_1_1Magnifier_1_1RectBounds.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structGNOME__Magnifier__Point__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structGNOME__Magnifier__RectBounds__type.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structMagLoginHelper.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structMagLoginHelperClass.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structMagnifier.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structMagnifierClass.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structMagnifierOptions.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structMagnifierZoomRegionSaveProps.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__ConfigDatabase.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__ConfigDatabase____epv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__ConfigDatabase____vepv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__EventSource.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__EventSource____epv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__EventSource____vepv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__Listener.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__Listener____epv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__Listener____vepv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__PropertyBag.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__PropertyBag____epv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__Bonobo__PropertyBag____vepv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__GNOME__Magnifier__Magnifier.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__GNOME__Magnifier__Magnifier____epv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__GNOME__Magnifier__Magnifier____vepv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__GNOME__Magnifier__ZoomRegion.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__GNOME__Magnifier__ZoomRegion____epv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structPOA__GNOME__Magnifier__ZoomRegion____vepv.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structZoomRegion.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structZoomRegionClass.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/struct__GmagWin.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/struct__MagnifierPrivate.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/struct__ZoomRegionPrivate.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/structtiming.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/tabs.css
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/zoom-region-private_8h-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/zoom-region-private_8h.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/zoom-region_8c-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/zoom-region_8c.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/zoom-region_8h-source.html
+  /usr/share/doc/gnome-mag-0.14.4/reference/html/zoom-region_8h.html
 
 ------------------
 
 Port Notes:
+
+----- version 0.14.4-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 0.12.5-1 -----
 Version bump.
