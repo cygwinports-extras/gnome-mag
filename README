@@ -6,40 +6,40 @@ services for use by other client applications and assistive
 technologies.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  ORBit2-2.14.10-1
-  at-spi-1.20.1-1
-  gdk-pixbuf2-2.12.2-1
-  glib2-2.14.4-1
-  gtk2-x11-2.12.2-1
+  cygwin-1.5.25-11
+  ORBit2-2.14.12-1
+  at-spi-1.22.1-1
+  gdk-pixbuf2-2.12.9-1
+  glib2-2.16.3-1
+  gtk2-x11-2.12.9-1
   libX11_6-1.1.3-1
   libXdamage1-1.1.1-1
   libXfixes3-4.0.3-1
-  libbonobo2-2.20.1-1
+  libbonobo2-2.22.0-1
   libcolorblind0-0.0.1-1
   libintl8-0.15-1
 (colorblind-applet)
-  python-2.5.1-3
-  python-bonobo2-2.20.1-1
-  python-gconf2-2.20.1-1
-  python-gnome2-2.20.1-1
-  python-gnomeapplet-2.20.0-1
-  python-gnomevfs2-2.20.1-1
-  python-gobject2-2.14.0-1
-  python-gtk2-2.14.0-1
+  python-2.5.2-1
+  python-bonobo2-2.22.1-1
+  python-gconf2-2.22.1-1
+  python-gnome2-2.22.1-1
+  python-gnomeapplet-2.22.0-1
+  python-gnomevfs2-2.22.1-1
+  python-gobject2-2.14.2-1
+  python-gtk2-2.14.1-1
   python-orbit-2.14.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  autoconf1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  autoconf1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  intltool-0.36.2-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  intltool-0.37.1-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -53,17 +53,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-mag-0.14.10-X-src.tar.bz2
+  unpack gnome-mag-0.15.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-mag-0.14.10-X.cygport all
+  cygport ./gnome-mag-0.15.0-X.cygport all
 
 This will create:
-  /usr/src/colorblind-applet-0.14.10-X.tar.bz2
-  /usr/src/gnome-mag-0.14.10-X-src.tar.bz2
-  /usr/src/gnome-mag-0.14.10-X.tar.bz2
-  /usr/src/gnome-mag-devel-0.14.10-X.tar.bz2
+  /usr/src/colorblind-applet-0.15.0-X.tar.bz2
+  /usr/src/gnome-mag-0.15.0-X-src.tar.bz2
+  /usr/src/gnome-mag-0.15.0-X.tar.bz2
+  /usr/src/gnome-mag-devel-0.15.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -75,13 +75,12 @@ Files included in the binary packages:
   /usr/lib/bonobo/servers/GNOME_Magnifier.server
   /usr/lib/orbit-2.0/GNOME_Magnifier_module.dll
   /usr/lib/orbit-2.0/GNOME_Magnifier_module.la
-  /usr/share/doc/Cygwin/gnome-mag-0.14.10.README
-  /usr/share/doc/gnome-mag-0.14.10/AUTHORS
-  /usr/share/doc/gnome-mag-0.14.10/COPYING
-  /usr/share/doc/gnome-mag-0.14.10/ChangeLog
-  /usr/share/doc/gnome-mag-0.14.10/INSTALL
-  /usr/share/doc/gnome-mag-0.14.10/NEWS
-  /usr/share/doc/gnome-mag-0.14.10/README
+  /usr/share/doc/gnome-mag-0.15.0/AUTHORS
+  /usr/share/doc/gnome-mag-0.15.0/COPYING
+  /usr/share/doc/gnome-mag-0.15.0/ChangeLog
+  /usr/share/doc/gnome-mag-0.15.0/INSTALL
+  /usr/share/doc/gnome-mag-0.15.0/NEWS
+  /usr/share/doc/gnome-mag-0.15.0/README
   /usr/share/gnome-mag/1_32/appstart.xpm
   /usr/share/gnome-mag/1_32/bottom_left_corner.xpm
   /usr/share/gnome-mag/1_32/bottom_side.xpm
@@ -192,79 +191,7 @@ Files included in the binary packages:
   /usr/lib/libgnome-mag.dll.a
   /usr/lib/libgnome-mag.la
   /usr/lib/pkgconfig/gnome-mag-1.0.pc
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-common_8c-source.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-common_8c.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-imodule_8c-source.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-imodule_8c.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-skels_8c-source.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-skels_8c.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-stubs_8c-source.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier-stubs_8c.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier_8h-source.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/GNOME__Magnifier_8h.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/annotated.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/dir_a9e748acdbda2d839fd3edd885bd0428.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/dirs.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/doxygen.css
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/doxygen.png
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/files.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/functions.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/functions_vars.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x61.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x62.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x63.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x65.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x67.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x6f.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x70.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_0x74.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_defs.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_defs_0x62.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_defs_0x63.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_defs_0x65.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_defs_0x67.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_defs_0x6f.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_defs_0x74.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_enum.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_eval.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_func.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_func_0x62.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_func_0x67.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_func_0x70.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/globals_vars.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/index.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structBonobo__EventSource__UnknownListener__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structBonobo__Pair__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structBonobo__PropertyBag__BackendFailed__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structBonobo__PropertyBag__InvalidType__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structBonobo__PropertyBag__NotFound__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structBonobo__PropertyBag__ReadOnly__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structCORBA__sequence__Bonobo__Pair.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structCORBA__sequence__CORBA__Object.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structCORBA__sequence__CORBA__string.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structGNOME__Magnifier__Point__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structGNOME__Magnifier__RectBounds__type.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__ConfigDatabase.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__ConfigDatabase____epv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__ConfigDatabase____vepv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__EventSource.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__EventSource____epv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__EventSource____vepv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__Listener.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__Listener____epv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__Listener____vepv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__PropertyBag.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__PropertyBag____epv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__Bonobo__PropertyBag____vepv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__GNOME__Magnifier__Magnifier.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__GNOME__Magnifier__Magnifier____epv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__GNOME__Magnifier__Magnifier____vepv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__GNOME__Magnifier__ZoomRegion.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__GNOME__Magnifier__ZoomRegion____epv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/structPOA__GNOME__Magnifier__ZoomRegion____vepv.html
-  /usr/share/doc/gnome-mag-0.14.10/reference/html/tabs.css
+  /usr/share/doc/gnome-mag-0.15.0/reference/html/*
   /usr/share/idl/gnome-mag-1.0/GNOME_Magnifier.idl
 
 (colorblind-applet)
@@ -326,6 +253,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.15.0-1 -----
+Version bump for GNOME 2.22..
 
 ----- version 0.14.10-1 -----
 Version bump for GNOME 2.20.
