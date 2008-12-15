@@ -1,0 +1,10 @@
+--- origsrc/gnome-mag-0.15.0/docs/reference/Makefile.am	2007-12-16 14:11:27.000000000 -0600
++++ src/gnome-mag-0.15.0/docs/reference/Makefile.am	2008-06-03 00:55:42.343750000 -0500
+@@ -1,6 +1,6 @@
+ # Process this file with automake to create Makefile.in.
+ 
+-doxygen_configfile = Doxyfile
++doxygen_configfile = $(srcdir)/Doxyfile
+ 
+ EXTRA_DIST = README Doxyfile
+ 

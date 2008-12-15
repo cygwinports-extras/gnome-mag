@@ -1,6 +1,7 @@
 category: Gnome
-requires: cygwin ORBit2 at-spi gtk2-x11 libX11_6 libXdamage1 libXfixes3 libbonobo2 libcolorblind0 libintl8
-sdesc: "GNOME Desktop screen magnification service (runtime)"
+requires: cygwin libglib2.0_0 libORBit2_0
+external-source: gnome-mag
+sdesc: "GNOME Desktop screen magnification service (library)"
 ldesc: "gnome-mag provides a command-line interface for standalone use,
 although its primary goal is to provide a set of magnification
 services for use by other client applications and assistive

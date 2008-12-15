@@ -1,0 +1,14 @@
+--- origsrc/gnome-mag-0.15.0/configure.in	2007-12-27 13:04:07.000000000 -0600
++++ src/gnome-mag-0.15.0/configure.in	2008-06-03 00:55:42.328125000 -0500
+@@ -122,9 +122,9 @@
+ 
+ if test "x$have_xextensions" = xyes; then
+    dnl path to XRENDER
+-   PKG_CHECK_MODULES(XCOMPOSITE, xcomposite xrender xext, [have_composite=yes])
++   PKG_CHECK_MODULES(XCOMPOSITE, xcomposite xrender xext, [have_composite=yes], [have_composite=no])
+    if test "x$have_composite" = xyes; then
+-      PKG_CHECK_MODULES(XCOMPOSITE, xcomposite >= 0.3, [have_overlay=yes])
++      PKG_CHECK_MODULES(XCOMPOSITE, xcomposite >= 0.3, [have_overlay=yes], [have_overlay=no])
+    fi
+ fi
+ 

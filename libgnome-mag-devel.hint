@@ -1,5 +1,5 @@
-category: Gnome Doc
-requires: cygwin gnome-mag glib2-devel ORBit2-devel gtk2-x11-devel libbonobo2-devel gettext
+category: Gnome
+requires: cygwin libgnome-mag2 libbonobo2-devel libglib2.0-devel libORBit2-devel
 external-source: gnome-mag
 sdesc: "GNOME Desktop screen magnification service (development)"
 ldesc: "gnome-mag provides a command-line interface for standalone use,

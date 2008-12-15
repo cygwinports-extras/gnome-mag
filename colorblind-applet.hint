@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin gnome-mag glib2 gtk2-x11 libX11_6 python python-bonobo2 python-gconf2 python-gnome2 python-gnomeapplet python-gnomevfs2 python-gobject2 python-gtk2 python-orbit
+requires: cygwin gnome-mag libglib2.0_0 libgtk2.0_0 libX11_6 python python-bonobo2 python-gconf2 python-gnome2 python-gnomeapplet python-gnomevfs2 python-gobject2 python-gtk2 python-orbit
 external-source: gnome-mag
 sdesc: "GNOME Desktop colorblindness filter applet"
 ldesc: "gnome-mag provides a command-line interface for standalone use,
