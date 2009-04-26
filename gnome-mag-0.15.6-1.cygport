@@ -6,7 +6,6 @@ HOMEPAGE="http://developer.gnome.org/projects/gap/"
 PATCH_URI="
 	0.15.0-python-no-undefined.patch
 	0.15.0-doxygen-vpath.patch
-	0.15.0-xcomposite-optional.patch
 	0.15.4-pkgconfig-deps.patch
 "
 
