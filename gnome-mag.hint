@@ -1,5 +1,5 @@
 category: Gnome
-requires: libbonobo2_0 libcolorblind0 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome-mag2 libgtk2.0_0 libintl8 libORBit2_0 libspi0 libX11_6 libXcomposite1 libXdamage1 libXext6 libXfixes3 libXrender1
+requires: libbonobo2_0 libcolorblind0 libdbus-glib_1_2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome-mag2 libgtk2.0_0 libintl8 libORBit2_0 libspi0 libX11_6 libXcomposite1 libXdamage1 libXext6 libXfixes3 libXrender1
 sdesc: "GNOME Desktop screen magnification service"
 ldesc: "gnome-mag provides a command-line interface for standalone use,
 although its primary goal is to provide a set of magnification

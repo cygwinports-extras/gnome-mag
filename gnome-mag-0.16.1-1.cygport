@@ -9,14 +9,16 @@ PATCH_URI="
 	0.15.4-pkgconfig-deps.patch
 "
 
-PKG_NAMES="${PN} libgnome-mag2 libgnome-mag-devel colorblind-applet"
+PKG_NAMES="${PN} libgnome-mag2 libgnome-mag-devel" # colorblind-applet"
 gnome_mag_CONTENTS="--exclude=reference --exclude=*pplet*
-                    usr/bin/*.exe usr/lib/bonobo/ usr/lib/orbit-2.0/ usr/share/doc/
-                    usr/share/${PN}/ usr/share/locale/ usr/share/man/"
+                    usr/bin/*.exe usr/lib/bonobo/ usr/lib/orbit-2.0/ usr/share/dbus-1/
+                    usr/share/doc/ usr/share/${PN}/ usr/share/locale/ usr/share/man/"
 libgnome_mag2_CONTENTS="usr/bin/*-2.dll"
 libgnome_mag_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/
                              usr/share/doc/${P}/reference/ usr/share/idl/"
 colorblind_applet_CONTENTS="etc/ usr/lib/bonobo/servers/*Applet* usr/lib/colorblind-applet/
                             ${PYTHON_SITELIB#/} usr/share/colorblind/ usr/share/icons/"
 
-DIFF_EXCLUDES="defs.py"
+DIFF_EXCLUDES="defs.py Makefile"
+
+CYGCONF_ARGS="--disable-colorblind-applet"
